@@ -23,5 +23,5 @@ const sortedUsers = [...users].sort((a, b) => a.friendsCount - b.friendsCount);
 console.log(sortedUsers.map((user) => user.name)); 
 
 // Завдання 4
-const uniqueSkills = [...new Set(users.flatMap((user) => user.skills))].sort();
-console.log(uniqueSkills); 
+const userSkills = users.map((user) => user.skills)
+console.log(userSkills.sort())
